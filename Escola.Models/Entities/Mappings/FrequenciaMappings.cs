@@ -20,8 +20,7 @@ namespace Escola.Models.Entities.Mappings
                 .HasColumnType("date");
 
             builder.Property(x => x.Presente)
-                .HasColumnName("Presente")
-                .HasColumnType("BYTE");
+                .HasColumnName("Presente");
 
             builder.HasOne(x => x.Matricula)
                 .WithMany(x => x.Frequencias)
@@ -32,7 +31,7 @@ namespace Escola.Models.Entities.Mappings
             builder.HasOne(x => x.TurmaDisciplinas)
                 .WithMany(x => x.Frequencias)
                 .HasForeignKey(x => x.TurmaDisciplinasId)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.Restrict)
                 .HasConstraintName($"FK_{Name}_frequencia_{Name}_turmaDisciplinas");
         }
     }

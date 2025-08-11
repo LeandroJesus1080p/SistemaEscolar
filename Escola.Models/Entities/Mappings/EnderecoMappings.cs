@@ -44,8 +44,7 @@ namespace Escola.Models.Entities.Mappings
                 .HasColumnType("VARCHAR")
                 .HasMaxLength(8);
 
-            builder.HasIndex(x => x.Logradouro)
-                .IsUnique();
+            builder.HasIndex(x => x.Logradouro);
 
             builder.HasOne(x => x.Aluno)
                 .WithMany(x => x.Enderecos)

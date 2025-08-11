@@ -28,7 +28,7 @@ namespace Escola.Models.Entities.Mappings
             builder.HasOne(x => x.TurmaDisciplinas)
                 .WithMany(x => x.Notas)
                 .HasForeignKey(x => x.TurmaDisciplinasId)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.Restrict)
                 .HasConstraintName($"FK_{Name}_nota_{Name}_turmaDisciplinas");
         }
     }

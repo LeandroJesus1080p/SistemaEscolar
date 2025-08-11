@@ -16,10 +16,9 @@ namespace Escola.Models.Entities.Mappings
                 .HasColumnType("VARCHAR");
 
             builder.Property(x => x.Celular)
-                .HasColumnName("Celular")
-                .HasColumnType("BYTE");
+                .HasColumnName("Celular");
 
-            builder.HasIndex(x => x.Celular).IsUnique();
+            builder.HasIndex(x => x.Celular);
 
             builder.HasOne(x => x.Aluno)
                 .WithMany(x => x.Contatos)

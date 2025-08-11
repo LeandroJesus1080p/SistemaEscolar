@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Escola.Models.Entities.Mappings;
+using Microsoft.EntityFrameworkCore;
 
 namespace Escola.Models.Entities
 {
@@ -17,7 +18,16 @@ namespace Escola.Models.Entities
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new AlunoMappings());
+            modelBuilder.ApplyConfiguration(new ContatoMappings());
+            modelBuilder.ApplyConfiguration(new DisciplinasMappings());
+            modelBuilder.ApplyConfiguration(new EnderecoMappings());
+            modelBuilder.ApplyConfiguration(new FrequenciaMappings());
+            modelBuilder.ApplyConfiguration(new MatriculaMappings());
+            modelBuilder.ApplyConfiguration(new NotaMappings());
+            modelBuilder.ApplyConfiguration(new ProfessorMappings());
+            modelBuilder.ApplyConfiguration(new TurmaDisciplinasMappings());
+            modelBuilder.ApplyConfiguration(new TurmaMappings());
         }
     }
 }

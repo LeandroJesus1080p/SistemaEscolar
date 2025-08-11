@@ -13,14 +13,14 @@ namespace Escola.Models.Entities.Mappings
             builder.HasOne(x => x.Turma)
                 .WithMany(x => x.TurmaDisciplinas)
                 .HasForeignKey(x => x.TurmaId)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.Restrict)
                 .HasConstraintName($"FK_{Name}_turmaDisciplinas{Name}_turma");
 
             builder.HasOne(x => x.Disciplina)
                 .WithMany(x => x.TurmaDisciplinas)
                 .HasForeignKey(x => x.DisciplinaId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName($"FK{Name}_turmaDisciplinas{Name}_disciplina");
+                .OnDelete(DeleteBehavior.Restrict)
+                .HasConstraintName($"FK_{Name}_turmaDisciplinas{Name}_disciplina");
 
             builder.HasOne(x => x.Professor)
                 .WithMany(x => x.TurmaDisciplinas)

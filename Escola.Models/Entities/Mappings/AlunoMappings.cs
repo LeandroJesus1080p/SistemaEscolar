@@ -37,8 +37,7 @@ namespace Escola.Models.Entities.Mappings
                 .HasColumnType("NVARCHAR")
                 .HasMaxLength(180);
 
-            builder.HasIndex(x => x.Nome, "IX_Aluno_Nome")
-                .IsUnique();
+            builder.HasIndex(x => x.Nome, "IX_Aluno_Nome");
         }
     }
 }

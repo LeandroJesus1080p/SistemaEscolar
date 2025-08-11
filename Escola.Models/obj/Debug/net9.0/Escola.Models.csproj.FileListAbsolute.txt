@@ -1,0 +1,13 @@
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Models\bin\Debug\net9.0\Escola.Models.deps.json
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Models\bin\Debug\net9.0\Escola.Models.dll
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Models\bin\Debug\net9.0\Escola.Models.pdb
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Models\obj\Debug\net9.0\Escola.Models.csproj.AssemblyReference.cache
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Models\obj\Debug\net9.0\Escola.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Models\obj\Debug\net9.0\Escola.Models.AssemblyInfoInputs.cache
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Models\obj\Debug\net9.0\Escola.Models.AssemblyInfo.cs
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Models\obj\Debug\net9.0\Escola.Models.csproj.CoreCompileInputs.cache
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Models\obj\Debug\net9.0\Escola.Models.sourcelink.json
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Models\obj\Debug\net9.0\Escola.Models.dll
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Models\obj\Debug\net9.0\refint\Escola.Models.dll
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Models\obj\Debug\net9.0\Escola.Models.pdb
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Models\obj\Debug\net9.0\ref\Escola.Models.dll

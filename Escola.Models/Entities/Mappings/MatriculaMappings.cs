@@ -14,7 +14,7 @@ namespace Escola.Models.Entities.Mappings
                 .HasColumnName("DataMatricula")
                 .HasColumnType("date");
 
-            builder.HasIndex(x => x.DataMatricula).IsUnique();
+            builder.HasIndex(x => x.DataMatricula);
 
             builder.HasOne(x => x.Aluno)
                 .WithMany(x => x.Matriculas)
