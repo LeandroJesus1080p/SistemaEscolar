@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -19,12 +19,15 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+	<ItemGroup>
+		<Reference Include="ePronto.Util">
+			<HintPath>C:\ePronto.Util.dll</HintPath>
+		</Reference>
+	</ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Escola.Models\Escola.Models.csproj" />
+    <ProjectReference Include="..\Escola.Services\Escola.Services.csproj" />
   </ItemGroup>
 
 </Project>

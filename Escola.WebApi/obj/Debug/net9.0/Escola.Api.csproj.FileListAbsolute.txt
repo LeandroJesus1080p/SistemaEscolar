@@ -150,7 +150,6 @@ C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\obj\Debug\net9.0\Esc
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\obj\Debug\net9.0\Escola.Api.AssemblyInfoInputs.cache
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\obj\Debug\net9.0\Escola.Api.AssemblyInfo.cs
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\obj\Debug\net9.0\Escola.Api.csproj.CoreCompileInputs.cache
-C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\obj\Debug\net9.0\Escola.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\obj\Debug\net9.0\Escola.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\obj\Debug\net9.0\Escola.Api.sourcelink.json
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\obj\Debug\net9.0\rjimswa.dswa.cache.json
@@ -167,3 +166,8 @@ C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\obj\Debug\net9.0\ref
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\obj\Debug\net9.0\Escola.Api.pdb
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\obj\Debug\net9.0\Escola.Api.genruntimeconfig.cache
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\obj\Debug\net9.0\ref\Escola.Api.dll
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\bin\Debug\net9.0\System.Linq.Dynamic.Core.dll
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\bin\Debug\net9.0\ePronto.Util.dll
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\bin\Debug\net9.0\Escola.Services.dll
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\bin\Debug\net9.0\Escola.Services.pdb
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

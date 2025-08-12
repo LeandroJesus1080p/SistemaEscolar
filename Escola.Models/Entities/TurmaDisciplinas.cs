@@ -1,5 +1,4 @@
-﻿
-namespace Escola.Models.Entities
+﻿namespace Escola.Models.Entities
 {
     public class TurmaDisciplinas : Table
     {

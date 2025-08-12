@@ -9,10 +9,12 @@
       "Escola.Api/1.0.0": {
         "dependencies": {
           "Escola.Models": "1.0.0",
+          "Escola.Services": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.8",
-          "Swashbuckle.AspNetCore": "9.0.3"
+          "Swashbuckle.AspNetCore": "9.0.3",
+          "ePronto.Util": "1.0.0.2"
         },
         "runtime": {
           "Escola.Api.dll": {}
@@ -931,6 +933,14 @@
         }
       },
       "System.IO.Pipelines/7.0.0": {},
+      "System.Linq.Dynamic.Core/1.6.7": {
+        "runtime": {
+          "lib/net9.0/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.6.7.0",
+            "fileVersion": "1.6.7.0"
+          }
+        }
+      },
       "System.Memory/4.5.4": {},
       "System.Memory.Data/1.0.2": {
         "dependencies": {
@@ -1066,6 +1076,26 @@
           "Escola.Models.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Escola.Services/1.0.0": {
+        "dependencies": {
+          "Escola.Models": "1.0.0",
+          "System.Linq.Dynamic.Core": "1.6.7"
+        },
+        "runtime": {
+          "Escola.Services.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ePronto.Util/1.0.0.2": {
+        "runtime": {
+          "ePronto.Util.dll": {
+            "assemblyVersion": "1.0.0.2",
+            "fileVersion": "1.0.0.2"
           }
         }
       }
@@ -1539,6 +1569,13 @@
       "path": "system.io.pipelines/7.0.0",
       "hashPath": "system.io.pipelines.7.0.0.nupkg.sha512"
     },
+    "System.Linq.Dynamic.Core/1.6.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lH+YgtovXbxD6JImHl2VXUtXRUvN8BMEZB2ReZNvS+J5GnGGZV9ivxslQ2nJWmKlBjFTReAKsevnQKE4yLP2pA==",
+      "path": "system.linq.dynamic.core/1.6.7",
+      "hashPath": "system.linq.dynamic.core.1.6.7.nupkg.sha512"
+    },
     "System.Memory/4.5.4": {
       "type": "package",
       "serviceable": true,
@@ -1674,6 +1711,16 @@
     },
     "Escola.Models/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Escola.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ePronto.Util/1.0.0.2": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

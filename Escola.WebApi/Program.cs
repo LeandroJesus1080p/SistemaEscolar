@@ -1,4 +1,5 @@
 using Escola.Models.Entities;
+using Escola.Services.Repositories.Alunos;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,14 @@ builder.Services.AddDbContextPool<DatabaseContext>(options =>
         .MigrationsHistoryTable("escola"));
 });
 
+builder.Services.AddScoped<IAlunoService, AlunoService>();
+
+// define política padrão CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder => { builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod(); });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,6 +36,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors();
 
 app.UseAuthorization();
 

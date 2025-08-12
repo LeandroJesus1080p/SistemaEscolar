@@ -1,0 +1,16 @@
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\obj\Debug\net9.0\Escola.Services.csproj.AssemblyReference.cache
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\obj\Debug\net9.0\Escola.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\obj\Debug\net9.0\Escola.Services.AssemblyInfoInputs.cache
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\obj\Debug\net9.0\Escola.Services.AssemblyInfo.cs
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\obj\Debug\net9.0\Escola.Services.csproj.CoreCompileInputs.cache
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\obj\Debug\net9.0\Escola.Services.sourcelink.json
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\bin\Debug\net9.0\Escola.Services.deps.json
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\bin\Debug\net9.0\Escola.Services.dll
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\bin\Debug\net9.0\Escola.Services.pdb
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\bin\Debug\net9.0\Escola.Models.dll
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\bin\Debug\net9.0\Escola.Models.pdb
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\obj\Debug\net9.0\Escola.S.C7B2242F.Up2Date
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\obj\Debug\net9.0\Escola.Services.dll
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\obj\Debug\net9.0\refint\Escola.Services.dll
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\obj\Debug\net9.0\Escola.Services.pdb
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.Services\obj\Debug\net9.0\ref\Escola.Services.dll

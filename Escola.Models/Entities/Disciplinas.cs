@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Escola.Models.Entities
+﻿namespace Escola.Models.Entities
 {
     public class Disciplinas : Table
     {

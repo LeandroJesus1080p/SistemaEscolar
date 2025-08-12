@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36310.24 d17.14
+VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escola.Api", "Escola.WebApi\Escola.Api.csproj", "{5411D26D-3260-4B8A-83FB-FD41F2D5844A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escola.Models", "Escola.Models\Escola.Models.csproj", "{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escola.Services", "Escola.Services\Escola.Services.csproj", "{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

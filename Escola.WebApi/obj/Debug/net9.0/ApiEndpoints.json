@@ -1,0 +1,59 @@
+[
+  {
+    "ContainingType": "Escola.Api.Controllers.AlunoController",
+    "Method": "Get",
+    "RelativePath": "Aluno",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sort",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortAsc",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "withPagination",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Escola.Api.Controllers.AlunoController",
+    "Method": "Post",
+    "RelativePath": "Aluno",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "Escola.Models.Entities.Aluno",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
