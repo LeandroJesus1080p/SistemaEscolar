@@ -1,8 +1,8 @@
 ﻿using eGreja.Api.Controllers;
-using ePronto.Util;
 using Escola.Models.Entities;
+using Escola.Models.Extensions;
+using Escola.Models.Mvvm;
 using Escola.Services.Repositories.Alunos;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Escola.Api.Controllers
@@ -10,52 +10,53 @@ namespace Escola.Api.Controllers
     public class AlunoController(IAlunoService service) : BaseController
     {
         [HttpGet]
-        public async Task<IActionResult> Get(string? nome = null, string? sort = "Nome", bool sortAsc = true, int pageIndex = 1, int pageSize = 50, bool withPagination = true)
+        public async Task<IActionResult> Get()
         {
             try
             {
-                var data = await service.GetList(
-                    nome: nome,
-                    sort: sort!,
-                    sortAsc: sortAsc,
-                    pageIndex: pageIndex,
-                    pageSize: pageSize,
-                    withPagination: withPagination);
+                var data = await service.GetAll();
 
-                return Ok(new
-                {
-                    success = true,
-                    data
-                });
-
+                return Ok(new ResultViewModel<IEnumerable<Aluno>>(data));
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
-                return CathError(ex);
+                return StatusCode(500, new ResultViewModel<List<Aluno>>("Falha no servidor"));
+            }
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetId(int id)
+        {
+            try
+            {
+                var data = await service.GetById(id);
+
+                return Ok(new ResultViewModel<Aluno>(data));
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, new ResultViewModel<Aluno>("Falha no servidor"));
             }
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(Aluno data)
+        public async Task<IActionResult> Create(Aluno aluno)
         {
             try
             {
-                await service.CreateAsync(data);
+                if (!ModelState.IsValid)
+                    return BadRequest(new ResultViewModel<Aluno>(ModelState.GetErrors()));
 
-                return Ok(new
-                {
-                    success = true,
-                    data = new
-                    {
-                        data.Id,
-                    }
-                });
+                var data = await service.Create(aluno);
 
+                return Ok(data);
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
-                return CathError(ex);
+                return StatusCode(500, new ResultViewModel<Aluno>("Erro no servidor"));
             }
+       
         }
+
     }
 }

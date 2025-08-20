@@ -6,51 +6,36 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "nome",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "sort",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "sortAsc",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "pageIndex",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "pageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "withPagination",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
     "ContainingType": "Escola.Api.Controllers.AlunoController",
-    "Method": "Post",
+    "Method": "Create",
     "RelativePath": "Aluno",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "data",
+        "Name": "aluno",
         "Type": "Escola.Models.Entities.Aluno",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Escola.Api.Controllers.AlunoController",
+    "Method": "GetId",
+    "RelativePath": "Aluno/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

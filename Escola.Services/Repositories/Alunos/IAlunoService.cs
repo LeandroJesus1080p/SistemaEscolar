@@ -1,85 +1,65 @@
-﻿using eGreja.Models.Mvvm;
-using Escola.Models.Entities;
+﻿using Escola.Models.Entities;
+using Escola.Models.Mvvm;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Escola.Services.Repositories.Alunos
 {
-    public interface IAlunoService : IRepository<Aluno>
+    public interface IAlunoService 
     {
-        Task<object> GetList(string? nome = null, string sort = "Nome", bool sortAsc = true, int pageIndex = 1, int pageSize = 50, bool withPagination = true);
+        Task<IEnumerable<Aluno>> GetAll();
+        Task<Aluno> GetById(int id);
+        Task<Aluno> Create(Aluno aluno);
+        Task<Aluno> Update(int id);
+        Task<Aluno> Delete(int id);
     }
-    public class AlunoService(DatabaseContext databaseContext) : Repository<Aluno>(databaseContext), IAlunoService
+
+    public class AlunoService(DatabaseContext _context) : IAlunoService
     {
-
-        public override async Task<Aluno> Get(int id)
+        public async Task<IEnumerable<Aluno>> GetAll()
         {
-            ResetParams();
+            var data = await _context.Alunos.ToListAsync();
+            if(data is null) return null!;
 
-            Params.Includes("Endereco");
-            Params.Includes("Contato");
-            Params.Includes("Matricula");
-
-            Params.Query(a => a.Id == id);
-
-            return await base.GetFirst()
-                ?? throw new Exception("Aluno não encontrado");
+            return data;
         }
 
-        public async Task<object> GetList(string? nome = null, string sort = "Nome", bool sortAsc = true, int pageIndex = 1, int pageSize = 50, bool withPagination = true)
+        public async Task<Aluno> GetById(int id)
         {
-            ResetParams();
+            var data = await _context.Alunos.FirstOrDefaultAsync(x => x.Id == id);
+            if (id == 0) return null!;
 
-            Params.Sort(sort, sortAsc);
-
-            if (!string.IsNullOrWhiteSpace(nome))
-                Params.Query(a => a.Nome.Contains(nome));
-
-            var data = await ListMvvm<object>.CreateAsync(Params.Get().Select(a => new
-            {
-                a.Id,
-                a.Nome,
-                a.DataNascimento,
-                a.Rg,
-                a.Cpf,
-                a.NomeResponsavel,
-
-                Link = IntToBase64(a.Id)
-
-            }), pageIndex, pageSize, withPagination);
-
-            return new
-            {
-                list = data,
-                pagination = data.GetPagination()
-            };
+            return data!;
         }
 
-        private static string IntToBase64(int number)
+        public async Task<Aluno> Create(Aluno aluno)
         {
-            string numberString = number.ToString();
-            byte[] bytes = Encoding.UTF8.GetBytes(numberString);
-            return Convert.ToBase64String(bytes);
+            await _context.AddAsync(aluno);
+            await _context.SaveChangesAsync();
+
+            return aluno;
         }
 
-        protected override async Task Validate(Aluno data)
+        public async Task<Aluno> Update(int id)
         {
-            await base.Validate(data);
+            var data = await _context.Alunos.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (data is null) return null!;
+
+            await _context.SaveChangesAsync();
+
+            return data;
         }
 
-        protected override async Task ValidateDuplicity(Aluno data)
+        public async Task<Aluno> Delete(int id)
         {
+            var data = await GetById(id);
 
-            if (await base.Exists(a => a.Id != data.Id && a.Nome == data.Nome))
-                throw new Exception("Já existe um cadastro com este nome");
+            if (data is null) return null!;
 
-            await base.ValidateDuplicity(data);
+            _context.Alunos.Remove(data);
 
+            return data;
         }
+
     }
 }

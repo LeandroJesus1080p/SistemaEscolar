@@ -57,13 +57,11 @@ C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\Sys
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\System.Composition.TypedParts.dll
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\System.Drawing.Common.dll
-C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\System.Formats.Asn1.dll
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\System.Memory.Data.dll
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\System.Runtime.Caching.dll
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\System.Security.Permissions.dll
-C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\System.Text.Json.dll
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\System.Windows.Extensions.dll
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\escola.webapi\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -171,3 +169,4 @@ C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\bin\Debug\net9.0\ePr
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\bin\Debug\net9.0\Escola.Services.dll
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\bin\Debug\net9.0\Escola.Services.pdb
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\obj\Debug\net9.0\Escola.Api.MvcApplicationPartsAssemblyInfo.cs
