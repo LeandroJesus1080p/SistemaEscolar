@@ -168,5 +168,5 @@ C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\bin\Debug\net9.0\Sys
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\bin\Debug\net9.0\ePronto.Util.dll
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\bin\Debug\net9.0\Escola.Services.dll
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\bin\Debug\net9.0\Escola.Services.pdb
-C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\obj\Debug\net9.0\Escola.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\leand\Desktop\Projetos\Escola.WebApi\Escola.WebApi\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

@@ -82,7 +82,8 @@ namespace Escola.Api.Migrations
 
                     b.Property<string>("Telefone")
                         .IsRequired()
-                        .HasColumnType("VARCHAR")
+                        .HasMaxLength(20)
+                        .HasColumnType("NVARCHAR")
                         .HasColumnName("Telefone");
 
                     b.HasKey("Id");

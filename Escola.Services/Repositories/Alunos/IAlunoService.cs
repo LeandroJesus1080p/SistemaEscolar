@@ -1,5 +1,5 @@
 ﻿using Escola.Models.Entities;
-using Escola.Models.Mvvm;
+using Escola.Services.ViewModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace Escola.Services.Repositories.Alunos
@@ -8,8 +8,8 @@ namespace Escola.Services.Repositories.Alunos
     {
         Task<IEnumerable<Aluno>> GetAll();
         Task<Aluno> GetById(int id);
-        Task Create(Aluno aluno);
-        Task Update(Aluno aluno);
+        Task<Aluno> Create(AlunoViewModel aluno);
+        Task Update(AlunoUpdateViewModel aluno);
         Task Delete(int id);
     }
 
@@ -17,38 +17,66 @@ namespace Escola.Services.Repositories.Alunos
     {
         public async Task<IEnumerable<Aluno>> GetAll()
         {
-            var data = await _context.Alunos.Include(x => x.Matriculas).Include(x => x.Enderecos).Include(x => x.Contatos).ToListAsync();
+            var data = await _context.Alunos.Include(x => x.Matriculas).ToListAsync() 
+                ?? throw new Exception("Sem dados");
 
             return data;
         }
 
         public async Task<Aluno> GetById(int id)
         {
-            var data = await _context.Alunos.FirstOrDefaultAsync(x => x.Id == id);
+            var data = await _context.Alunos.FirstOrDefaultAsync(x => x.Id == id) 
+                ?? throw new Exception("Aluno não encontrado");
 
             return data!;
         }
 
-        public async Task Create(Aluno aluno)
+        public async Task<Aluno> Create(AlunoViewModel aluno)
         {
-            await _context.AddAsync(aluno);
+            if (aluno == null)
+                throw new Exception("Formulario não pode ser vazio");
+
+            var data = new Aluno
+            {
+                Nome = aluno.Nome,
+                DataNascimento = aluno.DataNascimento,
+                Rg = aluno.Rg,
+                Cpf = aluno.Cpf,
+                NomeResponsavel = aluno.NomeResponsavel
+            };
+
+            await _context.AddAsync(data);
             await _context.SaveChangesAsync();
+
+            return data;
         }
 
-        public async Task Update(Aluno aluno)
+        public async Task Update(AlunoUpdateViewModel aluno)
         {
-            var data = _context.Alunos.Update(aluno);
+            if (aluno == null)
+                throw new Exception("Formulario vazio");
+
+            var data = new Aluno
+            {
+                Id = aluno.Id,
+                Nome = aluno.Nome,
+                DataNascimento = aluno.DataNascimento,
+                Rg = aluno.Rg,
+                Cpf = aluno.Cpf,
+                NomeResponsavel = aluno.NomeResponsavel
+            };
+
+            _context.Alunos.Update(data);
 
             await _context.SaveChangesAsync();
         }
 
         public async Task Delete(int id)
         {
-            var data = await GetById(id);
+            var data = await GetById(id) ?? throw new Exception("Aluno não encontrado");
 
             _context.Alunos.Remove(data);
             await _context.SaveChangesAsync();
         }
-
     }
 }

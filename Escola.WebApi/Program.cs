@@ -1,6 +1,8 @@
 using Escola.Models.Entities;
 using Escola.Services.Repositories.Alunos;
+using Escola.Services.Repositories.Contatos;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
-});
+}).AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -21,7 +24,9 @@ builder.Services.AddDbContextPool<DatabaseContext>(options =>
         .MigrationsHistoryTable("escola"));
 });
 
+//AddScoped
 builder.Services.AddScoped<IAlunoService, AlunoService>();
+builder.Services.AddScoped<IContatoService, ContatoService>();
 
 // define política padrão CORS
 builder.Services.AddCors(options =>

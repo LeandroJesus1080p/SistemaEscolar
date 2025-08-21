@@ -9,6 +9,9 @@ namespace Escola.Models.Entities.Mappings
         {
             builder.ToTable("Aluno");
 
+            builder.Property(x => x.Id)
+                .ValueGeneratedOnAdd();
+
             builder.Property(x => x.Nome)
                 .IsRequired()
                 .HasColumnName("Nome")

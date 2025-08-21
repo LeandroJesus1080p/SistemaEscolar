@@ -14,7 +14,7 @@ namespace Escola.Models.Entities
         public virtual DbSet<Turma> Turmas { get; set; }
         public virtual DbSet<TurmaDisciplinas> TurmaDisciplinas { get; set; }
         public virtual DbSet<Endereco> Enderecos { get; set; }
-        public virtual DbSet<Contato> Contato { get; set; }
+        public virtual DbSet<Contato> Contatos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -1,8 +1,5 @@
-﻿using eGreja.Api.Controllers;
-using Escola.Models.Entities;
-using Escola.Models.Extensions;
-using Escola.Models.Mvvm;
-using Escola.Services.Repositories.Alunos;
+﻿using Escola.Services.Repositories.Alunos;
+using Escola.Services.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Escola.Api.Controllers
@@ -16,13 +13,11 @@ namespace Escola.Api.Controllers
             {
                 var data = await service.GetAll();
 
-                if (data == null) return NotFound(new ResultViewModel<Aluno>("Alunos não encontrados"));
-
-                return Ok(new ResultViewModel<IEnumerable<Aluno>>(data));
+                return Ok(data);
             }
-            catch
+            catch (Exception ex)
             {
-                return StatusCode(500, new ResultViewModel<List<Aluno>>("Falha no servidor"));
+                return StatusCode(500, ex.Message);
             }
         }
 
@@ -33,47 +28,40 @@ namespace Escola.Api.Controllers
             {
                 var data = await service.GetById(id);
 
-                if (data == null) return NotFound(new ResultViewModel<Aluno>("Aluno não encontrado"));
-
-                return Ok(new ResultViewModel<Aluno>(data));
+                return Ok(data);
             }
-            catch
+            catch (Exception ex)
             {
-                return StatusCode(500, new ResultViewModel<Aluno>("Falha no servidor"));
+                return StatusCode(500, ex.Message);
             }
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Aluno aluno)
+        public async Task<IActionResult> Create(AlunoViewModel aluno)
         {
             try
             {
-                if (!ModelState.IsValid)
-                    return BadRequest(new ResultViewModel<Aluno>(ModelState.GetErrors()));
+                var create = await service.Create(aluno);
 
-                await service.Create(aluno);
-
-                return Ok(aluno);
+                return Ok(create);
             }
-            catch
+            catch (Exception ex)
             {
-                return StatusCode(500, new ResultViewModel<Aluno>("Erro no servidor"));
+                return StatusCode(500, ex.Message);
             }
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update(Aluno aluno)
+        public async Task<IActionResult> Update(AlunoUpdateViewModel aluno)
         {
             try
             {
-                if (aluno == null) return NotFound(new ResultViewModel<Aluno>("Aluno é nulo"));
-
                 await service.Update(aluno);
-                return Ok(new ResultViewModel<Aluno>(aluno));
+                return Ok(aluno);
             }
-            catch
+            catch (Exception ex)
             {
-                return StatusCode(500, new ResultViewModel<Aluno>("Erro no servidor"));
+                return StatusCode(500, ex.Message);
             }
         }
 
@@ -82,14 +70,12 @@ namespace Escola.Api.Controllers
         {
             try
             {
-                if (id <= 0) return NotFound(new ResultViewModel<Aluno>("Aluno não encontrado"));
-                
                 await service.Delete(id);
                 return Ok(id);
             }
-            catch
+            catch (Exception ex)
             {
-                return StatusCode(500, new ResultViewModel<Aluno>("Erro no servidor"));
+                return StatusCode(500, ex.Message);
             }
         }
     }

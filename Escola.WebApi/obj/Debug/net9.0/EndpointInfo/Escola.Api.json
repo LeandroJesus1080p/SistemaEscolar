@@ -24,17 +24,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Aluno"
+                "$ref": "#/components/schemas/AlunoViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Aluno"
+                "$ref": "#/components/schemas/AlunoViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Aluno"
+                "$ref": "#/components/schemas/AlunoViewModel"
               }
             }
           }
@@ -53,17 +53,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Aluno"
+                "$ref": "#/components/schemas/AlunoUpdateViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Aluno"
+                "$ref": "#/components/schemas/AlunoUpdateViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Aluno"
+                "$ref": "#/components/schemas/AlunoUpdateViewModel"
               }
             }
           }
@@ -118,11 +118,125 @@
           }
         }
       }
+    },
+    "/api/Contato": {
+      "get": {
+        "tags": [
+          "Contato"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Contato"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContatoCreateViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContatoCreateViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContatoCreateViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Contato"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContatoViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContatoViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContatoViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Contato/{id}": {
+      "get": {
+        "tags": [
+          "Contato"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Contato"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
-      "Aluno": {
+      "AlunoUpdateViewModel": {
         "required": [
           "cpf",
           "nome",
@@ -136,8 +250,9 @@
             "format": "int32"
           },
           "nome": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
           },
           "dataNascimento": {
             "type": "string",
@@ -145,42 +260,76 @@
             "nullable": true
           },
           "rg": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "cpf": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "nomeResponsavel": {
-            "type": "string",
-            "nullable": true
-          },
-          "enderecos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Endereco"
-            },
-            "nullable": true
-          },
-          "contatos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Contato"
-            },
-            "nullable": true
-          },
-          "matriculas": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Matricula"
-            },
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false
       },
-      "Contato": {
+      "AlunoViewModel": {
+        "required": [
+          "cpf",
+          "nome",
+          "nomeResponsavel",
+          "rg"
+        ],
+        "type": "object",
+        "properties": {
+          "nome": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "dataNascimento": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "rg": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "cpf": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "nomeResponsavel": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContatoCreateViewModel": {
+        "required": [
+          "telefone"
+        ],
+        "type": "object",
+        "properties": {
+          "alunoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "telefone": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "celular": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContatoViewModel": {
         "required": [
           "telefone"
         ],
@@ -195,404 +344,15 @@
             "format": "int32"
           },
           "telefone": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
           },
           "celular": {
             "type": "boolean"
-          },
-          "aluno": {
-            "$ref": "#/components/schemas/Aluno"
           }
         },
         "additionalProperties": false
-      },
-      "Disciplinas": {
-        "required": [
-          "cargaHoraria",
-          "nome"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nome": {
-            "type": "string",
-            "nullable": true
-          },
-          "cargaHoraria": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "turmaDisciplinas": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TurmaDisciplinas"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Endereco": {
-        "required": [
-          "bairro",
-          "cidade",
-          "logradouro",
-          "numero"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "alunoId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "logradouro": {
-            "type": "string",
-            "nullable": true
-          },
-          "numero": {
-            "type": "string",
-            "nullable": true
-          },
-          "complemento": {
-            "type": "string",
-            "nullable": true
-          },
-          "bairro": {
-            "type": "string",
-            "nullable": true
-          },
-          "cidade": {
-            "type": "string",
-            "nullable": true
-          },
-          "estado": {
-            "$ref": "#/components/schemas/EstadoEnum"
-          },
-          "cep": {
-            "type": "string",
-            "nullable": true
-          },
-          "aluno": {
-            "$ref": "#/components/schemas/Aluno"
-          }
-        },
-        "additionalProperties": false
-      },
-      "EstadoEnum": {
-        "enum": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16,
-          17,
-          18,
-          19,
-          20,
-          21,
-          22,
-          23,
-          24,
-          25,
-          26,
-          27
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
-      "Frequencia": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "matriculaId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "turmaDisciplinasId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "dataAula": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "presente": {
-            "type": "boolean"
-          },
-          "matricula": {
-            "$ref": "#/components/schemas/Matricula"
-          },
-          "turmaDisciplinas": {
-            "$ref": "#/components/schemas/TurmaDisciplinas"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Matricula": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "alunoId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "turmaId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "dataMatricula": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "status": {
-            "$ref": "#/components/schemas/StatusEnum"
-          },
-          "aluno": {
-            "$ref": "#/components/schemas/Aluno"
-          },
-          "turma": {
-            "$ref": "#/components/schemas/Turma"
-          },
-          "notas": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Nota"
-            },
-            "nullable": true
-          },
-          "frequencias": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Frequencia"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Nota": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "matriculaId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "turmaDisciplinasId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "notaAluno": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "periodoAvaliacao": {
-            "$ref": "#/components/schemas/PeriodoAvaliacaoEnum"
-          },
-          "dataAvaliacao": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "matricula": {
-            "$ref": "#/components/schemas/Matricula"
-          },
-          "turmaDisciplinas": {
-            "$ref": "#/components/schemas/TurmaDisciplinas"
-          }
-        },
-        "additionalProperties": false
-      },
-      "PeriodoAvaliacaoEnum": {
-        "enum": [
-          1,
-          2
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
-      "Professor": {
-        "required": [
-          "cpf",
-          "nome",
-          "rg"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nome": {
-            "type": "string",
-            "nullable": true
-          },
-          "dataNascimento": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "rg": {
-            "type": "string",
-            "nullable": true
-          },
-          "cpf": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "telefone": {
-            "type": "string",
-            "nullable": true
-          },
-          "formacao": {
-            "type": "string",
-            "nullable": true
-          },
-          "turmaDisciplinas": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TurmaDisciplinas"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "StatusEnum": {
-        "enum": [
-          1,
-          2,
-          3
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
-      "Turma": {
-        "required": [
-          "serie"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "anoLetivo": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "serie": {
-            "type": "string",
-            "nullable": true
-          },
-          "turmaPeriodo": {
-            "$ref": "#/components/schemas/TurnoPeriodoEnum"
-          },
-          "matriculas": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Matricula"
-            },
-            "nullable": true
-          },
-          "turmaDisciplinas": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TurmaDisciplinas"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "TurmaDisciplinas": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "turmaId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "disciplinaId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "professorId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "turma": {
-            "$ref": "#/components/schemas/Turma"
-          },
-          "disciplina": {
-            "$ref": "#/components/schemas/Disciplinas"
-          },
-          "professor": {
-            "$ref": "#/components/schemas/Professor"
-          },
-          "notas": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Nota"
-            },
-            "nullable": true
-          },
-          "frequencias": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Frequencia"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "TurnoPeriodoEnum": {
-        "enum": [
-          1,
-          2,
-          3
-        ],
-        "type": "integer",
-        "format": "int32"
       }
     }
   }

@@ -13,7 +13,8 @@ namespace Escola.Models.Entities.Mappings
             builder.Property(x => x.Telefone)
                 .IsRequired()
                 .HasColumnName("Telefone")
-                .HasColumnType("VARCHAR");
+                .HasColumnType("NVARCHAR")
+                .HasMaxLength(20);
 
             builder.Property(x => x.Celular)
                 .HasColumnName("Celular");
