@@ -16,9 +16,11 @@ namespace Escola.Api.Controllers
             {
                 var data = await service.GetAll();
 
+                if (data == null) return NotFound(new ResultViewModel<Aluno>("Alunos não encontrados"));
+
                 return Ok(new ResultViewModel<IEnumerable<Aluno>>(data));
             }
-            catch(Exception ex)
+            catch
             {
                 return StatusCode(500, new ResultViewModel<List<Aluno>>("Falha no servidor"));
             }
@@ -31,9 +33,11 @@ namespace Escola.Api.Controllers
             {
                 var data = await service.GetById(id);
 
+                if (data == null) return NotFound(new ResultViewModel<Aluno>("Aluno não encontrado"));
+
                 return Ok(new ResultViewModel<Aluno>(data));
             }
-            catch(Exception ex)
+            catch
             {
                 return StatusCode(500, new ResultViewModel<Aluno>("Falha no servidor"));
             }
@@ -47,16 +51,46 @@ namespace Escola.Api.Controllers
                 if (!ModelState.IsValid)
                     return BadRequest(new ResultViewModel<Aluno>(ModelState.GetErrors()));
 
-                var data = await service.Create(aluno);
+                await service.Create(aluno);
 
-                return Ok(data);
+                return Ok(aluno);
             }
-            catch(Exception ex)
+            catch
             {
                 return StatusCode(500, new ResultViewModel<Aluno>("Erro no servidor"));
             }
-       
         }
 
+        [HttpPut]
+        public async Task<IActionResult> Update(Aluno aluno)
+        {
+            try
+            {
+                if (aluno == null) return NotFound(new ResultViewModel<Aluno>("Aluno é nulo"));
+
+                await service.Update(aluno);
+                return Ok(new ResultViewModel<Aluno>(aluno));
+            }
+            catch
+            {
+                return StatusCode(500, new ResultViewModel<Aluno>("Erro no servidor"));
+            }
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                if (id <= 0) return NotFound(new ResultViewModel<Aluno>("Aluno não encontrado"));
+                
+                await service.Delete(id);
+                return Ok(id);
+            }
+            catch
+            {
+                return StatusCode(500, new ResultViewModel<Aluno>("Erro no servidor"));
+            }
+        }
     }
 }

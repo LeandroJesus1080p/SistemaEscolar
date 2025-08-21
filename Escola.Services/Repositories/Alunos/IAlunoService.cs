@@ -4,21 +4,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Escola.Services.Repositories.Alunos
 {
-    public interface IAlunoService 
+    public interface IAlunoService
     {
         Task<IEnumerable<Aluno>> GetAll();
         Task<Aluno> GetById(int id);
-        Task<Aluno> Create(Aluno aluno);
-        Task<Aluno> Update(int id);
-        Task<Aluno> Delete(int id);
+        Task Create(Aluno aluno);
+        Task Update(Aluno aluno);
+        Task Delete(int id);
     }
 
     public class AlunoService(DatabaseContext _context) : IAlunoService
     {
         public async Task<IEnumerable<Aluno>> GetAll()
         {
-            var data = await _context.Alunos.ToListAsync();
-            if(data is null) return null!;
+            var data = await _context.Alunos.Include(x => x.Matriculas).Include(x => x.Enderecos).Include(x => x.Contatos).ToListAsync();
 
             return data;
         }
@@ -26,39 +25,29 @@ namespace Escola.Services.Repositories.Alunos
         public async Task<Aluno> GetById(int id)
         {
             var data = await _context.Alunos.FirstOrDefaultAsync(x => x.Id == id);
-            if (id == 0) return null!;
 
             return data!;
         }
 
-        public async Task<Aluno> Create(Aluno aluno)
+        public async Task Create(Aluno aluno)
         {
             await _context.AddAsync(aluno);
             await _context.SaveChangesAsync();
-
-            return aluno;
         }
 
-        public async Task<Aluno> Update(int id)
+        public async Task Update(Aluno aluno)
         {
-            var data = await _context.Alunos.FirstOrDefaultAsync(x => x.Id == id);
-
-            if (data is null) return null!;
+            var data = _context.Alunos.Update(aluno);
 
             await _context.SaveChangesAsync();
-
-            return data;
         }
 
-        public async Task<Aluno> Delete(int id)
+        public async Task Delete(int id)
         {
             var data = await GetById(id);
 
-            if (data is null) return null!;
-
             _context.Alunos.Remove(data);
-
-            return data;
+            await _context.SaveChangesAsync();
         }
 
     }
