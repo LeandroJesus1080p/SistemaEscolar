@@ -3,8 +3,88 @@
   "WorkspaceRootPath": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.webapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|solutionrelative:escola.webapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|solutionrelative:escola.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|solutionrelative:escola.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|solutionrelative:escola.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.services\\viewmodels\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|solutionrelative:escola.services\\viewmodels\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.services\\repositories\\createtokens\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|solutionrelative:escola.services\\repositories\\createtokens\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.services\\repositories\\createtokens\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|solutionrelative:escola.services\\repositories\\createtokens\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.services\\repositories\\createtokens\\createtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|solutionrelative:escola.services\\repositories\\createtokens\\createtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.services\\repositories\\alunos\\ialunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|solutionrelative:escola.services\\repositories\\alunos\\ialunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.models\\extensions\\roleclaimsextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|solutionrelative:escola.models\\extensions\\roleclaimsextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.services\\escola.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|solutionrelative:escola.services\\escola.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.models\\entities\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|solutionrelative:escola.models\\entities\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.models\\entities\\mappings\\alunomappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|solutionrelative:escola.models\\entities\\mappings\\alunomappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.models\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|solutionrelative:escola.models\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.models\\entities\\mappings\\usermap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|solutionrelative:escola.models\\entities\\mappings\\usermap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.services\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|solutionrelative:escola.services\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.webapi\\controllers\\disciplinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|solutionrelative:escola.webapi\\controllers\\disciplinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.webapi\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|solutionrelative:escola.webapi\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.webapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|solutionrelative:escola.webapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.services\\viewmodels\\disciplinaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|solutionrelative:escola.services\\viewmodels\\disciplinaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.models\\entities\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|solutionrelative:escola.models\\entities\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.models\\entities\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,26 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.webapi\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|solutionrelative:escola.webapi\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.webapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|solutionrelative:escola.webapi\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.webapi\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|solutionrelative:escola.webapi\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.services\\repositories\\contatos\\contatoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B61DD4F-68BF-4965-AC1C-55D3D85BFD3A}|Escola.Services\\Escola.Services.csproj|solutionrelative:escola.services\\repositories\\contatos\\contatoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.models\\entities\\mappings\\alunomappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3FC1A3C-76C8-4DDC-B3E0-8FE59FABC9DE}|Escola.Models\\Escola.Models.csproj|solutionrelative:escola.models\\entities\\mappings\\alunomappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|c:\\users\\leand\\desktop\\projetos\\escola.webapi\\escola.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5411D26D-3260-4B8A-83FB-FD41F2D5844A}|Escola.WebApi\\Escola.Api.csproj|solutionrelative:escola.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,50 +106,154 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ContatoService.cs",
-              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Repositories\\Contatos\\ContatoService.cs",
-              "RelativeDocumentMoniker": "Escola.Services\\Repositories\\Contatos\\ContatoService.cs",
-              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Repositories\\Contatos\\ContatoService.cs",
-              "RelativeToolTip": "Escola.Services\\Repositories\\Contatos\\ContatoService.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAIAywCgAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T22:33:00.773Z",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Escola.WebApi\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\appsettings.Development.json",
+              "RelativeToolTip": "Escola.WebApi\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-28T15:56:45.725Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ContatoViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\ViewModels\\ContatoViewModel.cs",
-              "RelativeDocumentMoniker": "Escola.Services\\ViewModels\\ContatoViewModel.cs",
-              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\ViewModels\\ContatoViewModel.cs",
-              "RelativeToolTip": "Escola.Services\\ViewModels\\ContatoViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvx0AAAABAAAAAAAAAA==",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "Escola.WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\appsettings.json",
+              "RelativeToolTip": "Escola.WebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-28T15:56:43.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "Escola.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Program.cs",
+              "RelativeToolTip": "Escola.WebApi\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T21:50:36.044Z",
+              "WhenOpened": "2025-08-28T15:43:23.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IAlunoService.cs",
-              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Repositories\\Alunos\\IAlunoService.cs",
-              "RelativeDocumentMoniker": "Escola.Services\\Repositories\\Alunos\\IAlunoService.cs",
-              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Repositories\\Alunos\\IAlunoService.cs",
-              "RelativeToolTip": "Escola.Services\\Repositories\\Alunos\\IAlunoService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAkwE8AAAAJAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Escola.WebApi\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Escola.WebApi\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T19:05:31.172Z",
+              "WhenOpened": "2025-08-27T19:01:30.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Escola.Services",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Escola.Services.csproj",
+              "RelativeDocumentMoniker": "Escola.Services\\Escola.Services.csproj",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Escola.Services.csproj",
+              "RelativeToolTip": "Escola.Services\\Escola.Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-27T18:33:06.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Repositories\\CreateTokens\\EmailService.cs",
+              "RelativeDocumentMoniker": "Escola.Services\\Repositories\\CreateTokens\\EmailService.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Repositories\\CreateTokens\\EmailService.cs",
+              "RelativeToolTip": "Escola.Services\\Repositories\\CreateTokens\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:38:59.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Repositories\\CreateTokens\\TokenService.cs",
+              "RelativeDocumentMoniker": "Escola.Services\\Repositories\\CreateTokens\\TokenService.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Repositories\\CreateTokens\\TokenService.cs",
+              "RelativeToolTip": "Escola.Services\\Repositories\\CreateTokens\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:36:49.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RoleClaimsExtension.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Extensions\\RoleClaimsExtension.cs",
+              "RelativeDocumentMoniker": "Escola.Models\\Extensions\\RoleClaimsExtension.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Extensions\\RoleClaimsExtension.cs",
+              "RelativeToolTip": "Escola.Models\\Extensions\\RoleClaimsExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:33:34.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\ViewModels\\Configuration.cs",
+              "RelativeDocumentMoniker": "Escola.Services\\ViewModels\\Configuration.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\ViewModels\\Configuration.cs",
+              "RelativeToolTip": "Escola.Services\\ViewModels\\Configuration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:30:58.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "CreateToken.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Repositories\\CreateTokens\\CreateToken.cs",
+              "RelativeDocumentMoniker": "Escola.Services\\Repositories\\CreateTokens\\CreateToken.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Repositories\\CreateTokens\\CreateToken.cs",
+              "RelativeToolTip": "Escola.Services\\Repositories\\CreateTokens\\CreateToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:25:27.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "Escola.Models\\Entities\\Role.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Entities\\Role.cs",
+              "RelativeToolTip": "Escola.Models\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:07:18.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "AlunoMappings.cs",
               "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Entities\\Mappings\\AlunoMappings.cs",
               "RelativeDocumentMoniker": "Escola.Models\\Entities\\Mappings\\AlunoMappings.cs",
@@ -102,46 +266,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Aluno.cs",
-              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Entities\\Aluno.cs",
-              "RelativeDocumentMoniker": "Escola.Models\\Entities\\Aluno.cs",
-              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Entities\\Aluno.cs",
-              "RelativeToolTip": "Escola.Models\\Entities\\Aluno.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "UserMap.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Entities\\Mappings\\UserMap.cs",
+              "RelativeDocumentMoniker": "Escola.Models\\Entities\\Mappings\\UserMap.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Entities\\Mappings\\UserMap.cs",
+              "RelativeToolTip": "Escola.Models\\Entities\\Mappings\\UserMap.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAowDIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T18:30:11.99Z",
+              "WhenOpened": "2025-08-27T18:09:01.785Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AlunoController.cs",
-              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Controllers\\AlunoController.cs",
-              "RelativeDocumentMoniker": "Escola.WebApi\\Controllers\\AlunoController.cs",
-              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Controllers\\AlunoController.cs",
-              "RelativeToolTip": "Escola.WebApi\\Controllers\\AlunoController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAYwBQAAAANAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "IAlunoService.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Repositories\\Alunos\\IAlunoService.cs",
+              "RelativeDocumentMoniker": "Escola.Services\\Repositories\\Alunos\\IAlunoService.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\Repositories\\Alunos\\IAlunoService.cs",
+              "RelativeToolTip": "Escola.Services\\Repositories\\Alunos\\IAlunoService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAUwBwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T18:28:58.872Z",
+              "WhenOpened": "2025-08-21T19:05:31.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ContatoController.cs",
-              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Controllers\\ContatoController.cs",
-              "RelativeDocumentMoniker": "Escola.WebApi\\Controllers\\ContatoController.cs",
-              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Controllers\\ContatoController.cs",
-              "RelativeToolTip": "Escola.WebApi\\Controllers\\ContatoController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAIAywCcAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Escola.Services\\ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "Escola.Services\\ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T17:53:19.72Z",
+              "WhenOpened": "2025-08-27T18:01:03.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 18,
               "Title": "BaseController.cs",
               "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Controllers\\BaseController.cs",
               "RelativeDocumentMoniker": "Escola.WebApi\\Controllers\\BaseController.cs",
@@ -154,15 +318,107 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "Escola.WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Program.cs",
-              "RelativeToolTip": "Escola.WebApi\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "ContatoController.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Controllers\\ContatoController.cs",
+              "RelativeDocumentMoniker": "Escola.WebApi\\Controllers\\ContatoController.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Controllers\\ContatoController.cs",
+              "RelativeToolTip": "Escola.WebApi\\Controllers\\ContatoController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAIAywCcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T17:28:08.268Z"
+              "WhenOpened": "2025-08-21T17:53:19.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DisciplinaController.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Controllers\\DisciplinaController.cs",
+              "RelativeDocumentMoniker": "Escola.WebApi\\Controllers\\DisciplinaController.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Controllers\\DisciplinaController.cs",
+              "RelativeToolTip": "Escola.WebApi\\Controllers\\DisciplinaController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T01:53:49.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DatabaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Entities\\DatabaseContext.cs",
+              "RelativeDocumentMoniker": "Escola.Models\\Entities\\DatabaseContext.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Entities\\DatabaseContext.cs",
+              "RelativeToolTip": "Escola.Models\\Entities\\DatabaseContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T01:06:06.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Aluno.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Entities\\Aluno.cs",
+              "RelativeDocumentMoniker": "Escola.Models\\Entities\\Aluno.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Entities\\Aluno.cs",
+              "RelativeToolTip": "Escola.Models\\Entities\\Aluno.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T18:30:11.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ContatoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\ViewModels\\ContatoViewModel.cs",
+              "RelativeDocumentMoniker": "Escola.Services\\ViewModels\\ContatoViewModel.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\ViewModels\\ContatoViewModel.cs",
+              "RelativeToolTip": "Escola.Services\\ViewModels\\ContatoViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvx0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T21:50:36.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DisciplinaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\ViewModels\\DisciplinaViewModel.cs",
+              "RelativeDocumentMoniker": "Escola.Services\\ViewModels\\DisciplinaViewModel.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Services\\ViewModels\\DisciplinaViewModel.cs",
+              "RelativeToolTip": "Escola.Services\\ViewModels\\DisciplinaViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T01:54:32.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Contato.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Entities\\Contato.cs",
+              "RelativeDocumentMoniker": "Escola.Models\\Entities\\Contato.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.Models\\Entities\\Contato.cs",
+              "RelativeToolTip": "Escola.Models\\Entities\\Contato.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T01:33:50.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AlunoController.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Controllers\\AlunoController.cs",
+              "RelativeDocumentMoniker": "Escola.WebApi\\Controllers\\AlunoController.cs",
+              "ToolTip": "C:\\Users\\leand\\Desktop\\Projetos\\Escola.WebApi\\Escola.WebApi\\Controllers\\AlunoController.cs",
+              "RelativeToolTip": "Escola.WebApi\\Controllers\\AlunoController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAYwBQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T18:28:58.872Z",
+              "EditorCaption": ""
             }
           ]
         }

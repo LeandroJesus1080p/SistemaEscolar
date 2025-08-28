@@ -1,13 +1,14 @@
 using Escola.Models.Entities;
 using Escola.Services.Repositories.Alunos;
 using Escola.Services.Repositories.Contatos;
+using Escola.Services.Repositories.CreateTokens;
+using Escola.Services.Repositories.Disciplinas;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
@@ -17,22 +18,12 @@ builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContextPool<DatabaseContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), b => b
-        .MigrationsAssembly("Escola.Api")
-        .MigrationsHistoryTable("escola"));
-});
-
+//DatabaseContext
+ContextDatabase(builder);
 //AddScoped
-builder.Services.AddScoped<IAlunoService, AlunoService>();
-builder.Services.AddScoped<IContatoService, ContatoService>();
-
+ConfigureService(builder);
 // define política padrão CORS
-builder.Services.AddCors(options =>
-{
-    options.AddDefaultPolicy(builder => { builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod(); });
-});
+AddPolicyCors(builder);
 
 var app = builder.Build();
 
@@ -52,3 +43,29 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+void ContextDatabase(WebApplicationBuilder builder)
+{
+    builder.Services.AddDbContextPool<DatabaseContext>(options =>
+    {
+        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), b => b
+            .MigrationsAssembly("Escola.Api")
+            .MigrationsHistoryTable("escola"));
+    });
+}
+
+void ConfigureService(WebApplicationBuilder builder)
+{
+    builder.Services.AddScoped<IAlunoService, AlunoService>();
+    builder.Services.AddScoped<IContatoService, ContatoService>();
+    builder.Services.AddScoped<IDisciplinaService, DisciplinaService>();
+    builder.Services.AddScoped<TokenService>();
+}
+
+void AddPolicyCors(WebApplicationBuilder builder)
+{
+    builder.Services.AddCors(options =>
+    {
+        options.AddDefaultPolicy(builder => { builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod(); });
+    });
+}

@@ -95,7 +95,7 @@ namespace Escola.Api.Migrations
                     b.ToTable("Contato", (string)null);
                 });
 
-            modelBuilder.Entity("Escola.Models.Entities.Disciplinas", b =>
+            modelBuilder.Entity("Escola.Models.Entities.Disciplina", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -322,6 +322,27 @@ namespace Escola.Api.Migrations
                     b.ToTable("Professor", (string)null);
                 });
 
+            modelBuilder.Entity("Escola.Models.Entities.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Slug")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Role");
+                });
+
             modelBuilder.Entity("Escola.Models.Entities.Turma", b =>
                 {
                     b.Property<int>("Id")
@@ -374,6 +395,61 @@ namespace Escola.Api.Migrations
                     b.HasIndex("TurmaId");
 
                     b.ToTable("TurmaDisciplinas", (string)null);
+                });
+
+            modelBuilder.Entity("Escola.Models.Entities.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(160)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Email");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(80)
+                        .HasColumnType("NVARCHAR")
+                        .HasColumnName("Name");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("VARCHAR")
+                        .HasColumnName("Password");
+
+                    b.Property<string>("Slug")
+                        .IsRequired()
+                        .HasMaxLength(80)
+                        .HasColumnType("VARCHAR")
+                        .HasColumnName("Slug");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex(new[] { "Slug" }, "IX_User_Slug")
+                        .IsUnique();
+
+                    b.ToTable("User", (string)null);
+                });
+
+            modelBuilder.Entity("UserRole", b =>
+                {
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("RoleId", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserRole");
                 });
 
             modelBuilder.Entity("Escola.Models.Entities.Contato", b =>
@@ -465,7 +541,7 @@ namespace Escola.Api.Migrations
 
             modelBuilder.Entity("Escola.Models.Entities.TurmaDisciplinas", b =>
                 {
-                    b.HasOne("Escola.Models.Entities.Disciplinas", "Disciplina")
+                    b.HasOne("Escola.Models.Entities.Disciplina", "Disciplina")
                         .WithMany("TurmaDisciplinas")
                         .HasForeignKey("DisciplinaId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -493,6 +569,23 @@ namespace Escola.Api.Migrations
                     b.Navigation("Turma");
                 });
 
+            modelBuilder.Entity("UserRole", b =>
+                {
+                    b.HasOne("Escola.Models.Entities.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_UserRole_RoleId");
+
+                    b.HasOne("Escola.Models.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_UserRole_UserId");
+                });
+
             modelBuilder.Entity("Escola.Models.Entities.Aluno", b =>
                 {
                     b.Navigation("Contatos");
@@ -502,7 +595,7 @@ namespace Escola.Api.Migrations
                     b.Navigation("Matriculas");
                 });
 
-            modelBuilder.Entity("Escola.Models.Entities.Disciplinas", b =>
+            modelBuilder.Entity("Escola.Models.Entities.Disciplina", b =>
                 {
                     b.Navigation("TurmaDisciplinas");
                 });

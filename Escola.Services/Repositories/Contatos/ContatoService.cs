@@ -17,7 +17,7 @@ namespace Escola.Services.Repositories.Contatos
     {
         public async Task<List<Contato>> GetAll()
         {
-            var data = await _context.Contatos.ToListAsync() 
+            var data = await _context.Contatos.AsNoTracking().ToListAsync() 
                 ?? throw new Exception("Não a contatos");
     
             return data;
@@ -25,7 +25,7 @@ namespace Escola.Services.Repositories.Contatos
 
         public async Task<Contato> GetById(int id)
         {
-            var data = await _context.Contatos.FirstOrDefaultAsync(x => x.Id == id) 
+            var data = await _context.Contatos.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id) 
                 ?? throw new Exception("Contato não encontrado");
 
             return data!;

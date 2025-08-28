@@ -6,7 +6,7 @@ namespace Escola.Models.Entities
     public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbContext(options)
     {
         public virtual DbSet<Aluno> Alunos { get; set; }
-        public virtual DbSet<Disciplinas> Disciplinas { get; set; }
+        public virtual DbSet<Disciplina> Disciplinas { get; set; }
         public virtual DbSet<Frequencia> Frequencias { get; set; }
         public virtual DbSet<Matricula> Matriculas { get; set; }
         public virtual DbSet<Nota> Notas { get; set; }
@@ -15,6 +15,7 @@ namespace Escola.Models.Entities
         public virtual DbSet<TurmaDisciplinas> TurmaDisciplinas { get; set; }
         public virtual DbSet<Endereco> Enderecos { get; set; }
         public virtual DbSet<Contato> Contatos { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -28,6 +29,7 @@ namespace Escola.Models.Entities
             modelBuilder.ApplyConfiguration(new ProfessorMappings());
             modelBuilder.ApplyConfiguration(new TurmaDisciplinasMappings());
             modelBuilder.ApplyConfiguration(new TurmaMappings());
+            modelBuilder.ApplyConfiguration(new UserMap());
         }
     }
 }

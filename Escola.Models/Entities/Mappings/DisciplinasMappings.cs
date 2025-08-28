@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Escola.Models.Entities.Mappings
 {
-    public class DisciplinasMappings : IEntityTypeConfiguration<Disciplinas>
+    public class DisciplinasMappings : IEntityTypeConfiguration<Disciplina>
     {
-        public void Configure(EntityTypeBuilder<Disciplinas> builder)
+        public void Configure(EntityTypeBuilder<Disciplina> builder)
         {
             builder.ToTable("Disciplinas");
 

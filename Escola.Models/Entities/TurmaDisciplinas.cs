@@ -7,7 +7,7 @@
         public int ProfessorId { get; set; }
 
         public Turma? Turma { get; set; }
-        public Disciplinas? Disciplina { get; set; }
+        public Disciplina? Disciplina { get; set; }
         public Professor? Professor { get; set; }
 
         public virtual ICollection<Nota> Notas { get; set; } = [];

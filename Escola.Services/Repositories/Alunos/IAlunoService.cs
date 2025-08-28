@@ -17,7 +17,7 @@ namespace Escola.Services.Repositories.Alunos
     {
         public async Task<IEnumerable<Aluno>> GetAll()
         {
-            var data = await _context.Alunos.Include(x => x.Matriculas).ToListAsync() 
+            var data = await _context.Alunos.Include(x => x.Matriculas).AsNoTracking().ToListAsync() 
                 ?? throw new Exception("Sem dados");
 
             return data;
@@ -25,7 +25,7 @@ namespace Escola.Services.Repositories.Alunos
 
         public async Task<Aluno> GetById(int id)
         {
-            var data = await _context.Alunos.FirstOrDefaultAsync(x => x.Id == id) 
+            var data = await _context.Alunos.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id)
                 ?? throw new Exception("Aluno não encontrado");
 
             return data!;
